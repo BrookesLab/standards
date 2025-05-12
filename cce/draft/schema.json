@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/BrookesLab/standards/main/cce/draft/schema.json",
+    "type": "string",
+    "title": "Common Conditions of use Elements Controlled Vocabulary Schema",
+    "description": "A schema for a Common Conditions of use Elements (CCE) term.",
+    "enum": [
+        "Clinical Care Use",
+        "Clinical Research Use",
+        "Commercial Entity",
+        "Disease Specific Use",
+        "Geographical Area",
+        "Profit Motivated Use",
+        "Regulatory Jurisdiction",
+        "Research Use",
+        "Use as Control",
+        "Ethics Approval",
+        "Fees",
+        "Publication Moratorium",
+        "Publication of Results",
+        "(Re-)Identification of Individuals Mediated by the Resource Provider",
+        "(Re-)Identification of Individuals Without Involvement of the Resource Provider",
+        "Time Period",
+        "User Authentication"
+    ]
+}
