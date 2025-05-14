@@ -49,40 +49,40 @@
     <rdf:Description rdf:about="https://standards.brookeslab.org/cce/draft#CCE_001">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
         <rdfs:label xml:lang="en-GB">Clinical Care Use</rdfs:label>
-        <skos:notation xml:lang="en-GB">CCE_001</skos:notation>
         <skos:definition xml:lang="en-GB">Use for patient healthcare and related services.</skos:definition>
         <skos:inScheme rdf:resource="https://standards.brookeslab.org/cce/draft#cce-scheme" />
         <skos:topConceptOf rdf:resource="https://standards.brookeslab.org/cce/draft#cce-scheme" />
+        <skos:notation xml:lang="en-GB">CCE_001</skos:notation>
         <skos:historyNote xml:lang="en-GB">The initially suggested term of “Clinical Use” was
             highlighted by the alpha testers as being too vague, in that it covered both clinical
             research use AND clinical care of the patient. This led to the splitting of the term
-            into “Clinical Research Use” and “Clinical Care Use”.</skos:historyNote>
+            into "Clinical Research Use" and "Clinical Care Use".</skos:historyNote>
         <dct:references rdf:resource="https://doi.org/10.1038/s41597-024-03279-z" />
     </rdf:Description>
 
     <rdf:Description rdf:about="https://standards.brookeslab.org/cce/draft#CCE_002">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
         <rdfs:label xml:lang="en-GB">Clinical Research Use</rdfs:label>
-        <skos:notation xml:lang="en-GB">CCE_002</skos:notation>
         <skos:definition xml:lang="en-GB">Use for research-related activities that involve human
             subjects where the intention is to advance medical knowledge.</skos:definition>
         <skos:inScheme rdf:resource="https://standards.brookeslab.org/cce/draft#cce-scheme" />
         <skos:topConceptOf rdf:resource="https://standards.brookeslab.org/cce/draft#cce-scheme" />
+        <skos:notation xml:lang="en-GB">CCE_002</skos:notation>
         <skos:historyNote xml:lang="en-GB">The initially suggested term of “Clinical Use” was
             highlighted by the alpha testers as being too vague, in that it covered both clinical
             research use AND clinical care of the patient. This led to the splitting of the term
-            into “Clinical Research Use” and “Clinical Care Use”.</skos:historyNote>
+            into "Clinical Research Use" and "Clinical Care Use".</skos:historyNote>
         <dct:references rdf:resource="https://doi.org/10.1038/s41597-024-03279-z" />
     </rdf:Description>
 
     <rdf:Description rdf:about="https://standards.brookeslab.org/cce/draft#CCE_003">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
         <rdfs:label xml:lang="en-GB">Commercial Entity</rdfs:label>
-        <skos:notation xml:lang="en-GB">CCE_003</skos:notation>
         <skos:definition xml:lang="en-GB">Use by an entity in the commercial sector, whether or not
             that use seeks to make a financial profit.</skos:definition>
         <skos:inScheme rdf:resource="https://standards.brookeslab.org/cce/draft#cce-scheme" />
         <skos:topConceptOf rdf:resource="https://standards.brookeslab.org/cce/draft#cce-scheme" />
+        <skos:notation xml:lang="en-GB">CCE_003</skos:notation>
         <skos:historyNote xml:lang="en-GB">This term was suggested by members of the CCE oversight
             group as a way to distinguish between the use of a resource by a commercial entity and
             the use of a resource for profit (which is covered by the term Profit Motivated Use).
@@ -95,11 +95,11 @@
     <rdf:Description rdf:about="https://standards.brookeslab.org/cce/draft#CCE_004">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
         <rdfs:label xml:lang="en-GB">Disease Specific Use</rdfs:label>
-        <skos:notation xml:lang="en-GB">CCE_004</skos:notation>
         <skos:definition xml:lang="en-GB">Use for research-related activities pertaining to one or
             more specific diseases or disease categories.</skos:definition>
         <skos:inScheme rdf:resource="https://standards.brookeslab.org/cce/draft#cce-scheme" />
         <skos:topConceptOf rdf:resource="https://standards.brookeslab.org/cce/draft#cce-scheme" />
+        <skos:notation xml:lang="en-GB">CCE_004</skos:notation>
         <skos:historyNote xml:lang="en-GB">This term was coined to allow the user to define a
             specific disease, condition or group of such, that the use of their resource was
             permitted for. Gathering resources that are specific to a given disease and condition
@@ -111,10 +111,10 @@
     <rdf:Description rdf:about="https://standards.brookeslab.org/cce/draft#CCE_005">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
         <rdfs:label xml:lang="en-GB">Geographical Area</rdfs:label>
-        <skos:notation xml:lang="en-GB">CCE_005</skos:notation>
         <skos:definition xml:lang="en-GB">Use within specified geographic region(s).</skos:definition>
         <skos:inScheme rdf:resource="https://standards.brookeslab.org/cce/draft#cce-scheme" />
         <skos:topConceptOf rdf:resource="https://standards.brookeslab.org/cce/draft#cce-scheme" />
+        <skos:notation xml:lang="en-GB">CCE_005</skos:notation>
         <skos:historyNote xml:lang="en-GB">This term was separated from the term for Regulatory
             Jurisdiction to so that it pertained only to a given geographical area. This allows for
             the Regulatory Jurisdiction term to be used specifically to designate which jurisdiction
@@ -128,10 +128,10 @@
     <rdf:Description rdf:about="https://standards.brookeslab.org/cce/draft#CCE_006">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
         <rdfs:label xml:lang="en-GB">Profit Motivated Use</rdfs:label>
-        <skos:notation xml:lang="en-GB">CCE_006</skos:notation>
         <skos:definition xml:lang="en-GB">Use with the intention of making profit.</skos:definition>
         <skos:inScheme rdf:resource="https://standards.brookeslab.org/cce/draft#cce-scheme" />
         <skos:topConceptOf rdf:resource="https://standards.brookeslab.org/cce/draft#cce-scheme" />
+        <skos:notation xml:lang="en-GB">CCE_006</skos:notation>
         <skos:historyNote xml:lang="en-GB">This term was suggested by members of the CCE oversight
             group as a complementary term to the "Commercial Entity" term. This allowed the concept
             of "Profit Motivated Use" to be separated out. This allows the user to define
@@ -143,11 +143,11 @@
     <rdf:Description rdf:about="https://standards.brookeslab.org/cce/draft#CCE_007">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
         <rdfs:label xml:lang="en-GB">Regulatory Jurisdiction</rdfs:label>
-        <skos:notation xml:lang="en-GB">CCE_007</skos:notation>
         <skos:definition xml:lang="en-GB">Use within an area defined by a shared legal framework, or
             subject to a common oversight organisation.</skos:definition>
         <skos:inScheme rdf:resource="https://standards.brookeslab.org/cce/draft#cce-scheme" />
         <skos:topConceptOf rdf:resource="https://standards.brookeslab.org/cce/draft#cce-scheme" />
+        <skos:notation xml:lang="en-GB">CCE_007</skos:notation>
         <skos:historyNote xml:lang="en-GB">This term was coined by the CCE oversight group, to allow
             the regulatory jurisdiction to be defined separately to the geographical area. This is
             useful in cases where a given area of jurisdiction covers one or more countries or
@@ -160,10 +160,10 @@
     <rdf:Description rdf:about="https://standards.brookeslab.org/cce/draft#CCE_008">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
         <rdfs:label xml:lang="en-GB">Research Use</rdfs:label>
-        <skos:notation xml:lang="en-GB">CCE_008</skos:notation>
-        <skos:definition xml:lang="en-GB">Use for research-related exploration or innovation.</skos:definition>
+        <skos:definition xml:lang="en-GB">Use for research-related exploration or innovation</skos:definition>
         <skos:inScheme rdf:resource="https://standards.brookeslab.org/cce/draft#cce-scheme" />
         <skos:topConceptOf rdf:resource="https://standards.brookeslab.org/cce/draft#cce-scheme" />
+        <skos:notation xml:lang="en-GB">CCE_008</skos:notation>
         <skos:historyNote xml:lang="en-GB">This term is more often stated as "research use only".
             However, this phrase breaks the rules for CCE terms in that it includes an implied
             prohibition on all other uses. By dropping the only from the term the user is free to
@@ -175,11 +175,11 @@
     <rdf:Description rdf:about="https://standards.brookeslab.org/cce/draft#CCE_009">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
         <rdfs:label xml:lang="en-GB">Use As Control</rdfs:label>
-        <skos:notation xml:lang="en-GB">CCE_009</skos:notation>
         <skos:definition xml:lang="en-GB">Use as a reference, benchmark or normal control for
             research or other activities.</skos:definition>
         <skos:inScheme rdf:resource="https://standards.brookeslab.org/cce/draft#cce-scheme" />
         <skos:topConceptOf rdf:resource="https://standards.brookeslab.org/cce/draft#cce-scheme" />
+        <skos:notation xml:lang="en-GB">CCE_009</skos:notation>
         <skos:historyNote xml:lang="en-GB">This term was devised to allow the user to permit or deny
             the use of their resources as controls. This may be useful in the event that the
             resources are only consented for a defined range of uses, or are not of a suitable
@@ -193,11 +193,11 @@
     <rdf:Description rdf:about="https://standards.brookeslab.org/cce/draft#CCE_010">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
         <rdfs:label xml:lang="en-GB">Ethics Approval</rdfs:label>
-        <skos:notation xml:lang="en-GB">CCE_010</skos:notation>
         <skos:definition xml:lang="en-GB">Use involves a requirement on the recipient to evidence
             suitable ethics board (e.g., IRB/ERB) or other intuitional or oversight body approval.</skos:definition>
         <skos:inScheme rdf:resource="https://standards.brookeslab.org/cce/draft#cce-scheme" />
         <skos:topConceptOf rdf:resource="https://standards.brookeslab.org/cce/draft#cce-scheme" />
+        <skos:notation xml:lang="en-GB">CCE_010</skos:notation>
         <skos:historyNote xml:lang="en-GB">This term allows the user to specify any ethics or other
             approvals (such as governance, legal, or regulatory approval) required.</skos:historyNote>
         <dct:references rdf:resource="https://doi.org/10.1038/s41597-024-03279-z" />
@@ -206,10 +206,10 @@
     <rdf:Description rdf:about="https://standards.brookeslab.org/cce/draft#CCE_011">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
         <rdfs:label xml:lang="en-GB">Fees</rdfs:label>
-        <skos:notation xml:lang="en-GB">CCE_011</skos:notation>
         <skos:definition xml:lang="en-GB">Use that involves payment as a basis for access or use.</skos:definition>
         <skos:inScheme rdf:resource="https://standards.brookeslab.org/cce/draft#cce-scheme" />
         <skos:topConceptOf rdf:resource="https://standards.brookeslab.org/cce/draft#cce-scheme" />
+        <skos:notation xml:lang="en-GB">CCE_011</skos:notation>
         <skos:historyNote xml:lang="en-GB">Defined as part of the original CCE term list, to fulfil
             the purpose described.</skos:historyNote>
         <dct:references rdf:resource="https://doi.org/10.1038/s41597-024-03279-z" />
@@ -218,12 +218,12 @@
     <rdf:Description rdf:about="https://standards.brookeslab.org/cce/draft#CCE_012">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
         <rdfs:label xml:lang="en-GB">Publication Moratorium</rdfs:label>
-        <skos:notation xml:lang="en-GB">CCE_012</skos:notation>
         <skos:definition xml:lang="en-GB">Use involves a requirement on the recipient to not publish
             derived results before a specific date, time period, or other condition (such as
             approval from the supplying institution) has been met.</skos:definition>
         <skos:inScheme rdf:resource="https://standards.brookeslab.org/cce/draft#cce-scheme" />
         <skos:topConceptOf rdf:resource="https://standards.brookeslab.org/cce/draft#cce-scheme" />
+        <skos:notation xml:lang="en-GB">CCE_012</skos:notation>
         <skos:historyNote xml:lang="en-GB">Defined as part of the original CCE term list, as a
             compliment to the publication CCE. This then allows the user to specify the complete set
             of requirements or otherwise regarding publication or not of results.</skos:historyNote>
@@ -233,17 +233,16 @@
     <rdf:Description rdf:about="https://standards.brookeslab.org/cce/draft#CCE_013">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
         <rdfs:label xml:lang="en-GB">Publication of Results</rdfs:label>
-        <skos:notation xml:lang="en-GB">CCE_013</skos:notation>
         <skos:definition xml:lang="en-GB">Use involves a requirement on the recipient to make
             derived results available to the wider scientific community.</skos:definition>
         <skos:inScheme rdf:resource="https://standards.brookeslab.org/cce/draft#cce-scheme" />
         <skos:topConceptOf rdf:resource="https://standards.brookeslab.org/cce/draft#cce-scheme" />
+        <skos:notation xml:lang="en-GB">CCE_013</skos:notation>
         <skos:historyNote xml:lang="en-GB">This term was updated from Publication to Publicaiton of
-            Results to clarify the CCE term.
-
-            Defined as part of the original CCE term list, as a compliment to the publication
-            moratorium CCE. This then allows the user to specify the complete set of requirements or
-            otherwise regarding publication or not of results.</skos:historyNote>
+            Results to clarify the CCE term.</skos:historyNote>
+        <skos:historyNote xml:lang="en-GB">Defined as part of the original CCE term list, as a
+            compliment to the publication moratorium CCE. This then allows the user to specify the
+            complete set of requirements or otherwise regarding publication or not of results.</skos:historyNote>
         <dct:references rdf:resource="https://doi.org/10.1038/s41597-024-03279-z" />
     </rdf:Description>
 
@@ -251,12 +250,12 @@
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
         <rdfs:label xml:lang="en-GB">(Re-)Identification Of Individuals Mediated By The Resource
             Provider</rdfs:label>
-        <skos:notation xml:lang="en-GB">CCE_014</skos:notation>
         <skos:definition xml:lang="en-GB">Use of records or samples in a resource (provided in a
             non-identified form) in a manner that identifies or re-identifies one or more
             individuals, mediated with the involvement of the resource provider.</skos:definition>
         <skos:inScheme rdf:resource="https://standards.brookeslab.org/cce/draft#cce-scheme" />
         <skos:topConceptOf rdf:resource="https://standards.brookeslab.org/cce/draft#cce-scheme" />
+        <skos:notation xml:lang="en-GB">CCE_014</skos:notation>
         <skos:historyNote xml:lang="en-GB">Defined as part of the original CCE term list, as a means
             for the user to state methods for re-identification of anonymous subjects, with the
             involvement of the resource provider. Such use cases could be when feeding back results
@@ -269,12 +268,12 @@
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
         <rdfs:label xml:lang="en-GB">(Re-)Identification Of Individuals Without Involvement Of The
             Resource Provider</rdfs:label>
-        <skos:notation xml:lang="en-GB">CCE_015</skos:notation>
         <skos:definition xml:lang="en-GB">Use of records or samples in a resource (provided in a
             non-identified form) in a manner that identifies or re-identifies one or more
             individuals, without the involvement of the resource provider.</skos:definition>
         <skos:inScheme rdf:resource="https://standards.brookeslab.org/cce/draft#cce-scheme" />
         <skos:topConceptOf rdf:resource="https://standards.brookeslab.org/cce/draft#cce-scheme" />
+        <skos:notation xml:lang="en-GB">CCE_015</skos:notation>
         <skos:historyNote xml:lang="en-GB">Defined as part of the original CCE term list, with the
             expectation that it would always be forbidden. This was expected to be supplemented with
             free text to explain any safeguards that were required to ensure that this CCE was
@@ -286,10 +285,10 @@
     <rdf:Description rdf:about="https://standards.brookeslab.org/cce/draft#CCE_016">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
         <rdfs:label xml:lang="en-GB">Time Period</rdfs:label>
-        <skos:notation xml:lang="en-GB">CCE_016</skos:notation>
         <skos:definition xml:lang="en-GB">Use that has some time-frame limitation.</skos:definition>
         <skos:inScheme rdf:resource="https://standards.brookeslab.org/cce/draft#cce-scheme" />
         <skos:topConceptOf rdf:resource="https://standards.brookeslab.org/cce/draft#cce-scheme" />
+        <skos:notation xml:lang="en-GB">CCE_016</skos:notation>
         <skos:historyNote xml:lang="en-GB">Defined as part of the original CCE term list, in order
             to allow the user to define any restriction in terms of time either in terms of duration
             or conditions that must be met (i.e. use is only permitted for up to 1 year after the
@@ -301,16 +300,62 @@
     <rdf:Description rdf:about="https://standards.brookeslab.org/cce/draft#CCE_017">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
         <rdfs:label xml:lang="en-GB">User Authentication</rdfs:label>
-        <skos:notation xml:lang="en-GB">CCE_017</skos:notation>
         <skos:definition xml:lang="en-GB">Use involves a requirement on the recipient to
             successfully undertake some form of ID proofing and authentication, prior to the access
             or use.</skos:definition>
         <skos:inScheme rdf:resource="https://standards.brookeslab.org/cce/draft#cce-scheme" />
         <skos:topConceptOf rdf:resource="https://standards.brookeslab.org/cce/draft#cce-scheme" />
+        <skos:notation xml:lang="en-GB">CCE_017</skos:notation>
         <skos:historyNote xml:lang="en-GB">Defined as part of the original CCE term list, in order
             to allow the user to define requirements (or not) for users of a bioresource to
             authenticate themselves. For example, the user could be required to log into an access
             system using an external 3rd party identity provider's ID such as ORCID.</skos:historyNote>
+        <dct:references rdf:resource="https://doi.org/10.1038/s41597-024-03279-z" />
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://standards.brookeslab.org/cce/draft#CCE_018">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
+        <rdfs:label xml:lang="en-GB">Collaboration</rdfs:label>
+        <skos:definition xml:lang="en-GB">Use that involves some form of collaboration, typically
+            with the resource provider.</skos:definition>
+        <skos:inScheme rdf:resource="https://standards.brookeslab.org/cce/draft#cce-scheme" />
+        <skos:topConceptOf rdf:resource="https://standards.brookeslab.org/cce/draft#cce-scheme" />
+        <skos:notation xml:lang="en-GB">CCE_018</skos:notation>
+        <skos:historyNote xml:lang="en-GB">This term was added to allow a resource provider to
+            indicate if they required to be collaborators in any use of their bioresource. This
+            included any type of required recognition of them for supplying the resource. However,
+            some of these broader interpretations have now been extracted into separate CCE terms.
+            Hence, this term is now solely related to collaboration with the resource provider or
+            other collaborator.</skos:historyNote>
+        <dct:references rdf:resource="https://doi.org/10.1038/s41597-024-03279-z" />
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://standards.brookeslab.org/cce/draft#CCE_019">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
+        <rdfs:label xml:lang="en-GB">Return of Incidental Findings</rdfs:label>
+        <skos:definition xml:lang="en-GB">Use that involves a requirement on the recipient to return
+            results that were not intentionally generated by the planned use, to the resource
+            provider.</skos:definition>
+        <skos:inScheme rdf:resource="https://standards.brookeslab.org/cce/draft#cce-scheme" />
+        <skos:topConceptOf rdf:resource="https://standards.brookeslab.org/cce/draft#cce-scheme" />
+        <skos:notation xml:lang="en-GB">CCE_019</skos:notation>
+        <skos:historyNote xml:lang="en-GB">Defined as part of the original CCE term list, in order
+            to allow the user to set if this action was permitted and if so how this should be
+            performed, via free text.</skos:historyNote>
+        <dct:references rdf:resource="https://doi.org/10.1038/s41597-024-03279-z" />
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://standards.brookeslab.org/cce/draft#CCE_020">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
+        <rdfs:label xml:lang="en-GB">Return of Results</rdfs:label>
+        <skos:definition xml:lang="en-GB">Use that involves a requirement on the recipient to return
+            results that were intentionally generated by the planned use, to the resource provider.</skos:definition>
+        <skos:inScheme rdf:resource="https://standards.brookeslab.org/cce/draft#cce-scheme" />
+        <skos:topConceptOf rdf:resource="https://standards.brookeslab.org/cce/draft#cce-scheme" />
+        <skos:notation xml:lang="en-GB">CCE_020</skos:notation>
+        <skos:historyNote xml:lang="en-GB">Defined as part of the original CCE term list, in order
+            to allow the user to define if they expected the user to return the results of their use
+            of the bioresource to them as well as the means of doing so.</skos:historyNote>
         <dct:references rdf:resource="https://doi.org/10.1038/s41597-024-03279-z" />
     </rdf:Description>
 
