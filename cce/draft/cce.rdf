@@ -31,9 +31,18 @@
         <rdfs:label xml:lang="en-GB">Requirement</rdfs:label>
         <skos:member rdf:resource="https://standards.brookeslab.org/cce/draft#CCE_003" />
         <skos:member rdf:resource="https://standards.brookeslab.org/cce/draft#CCE_005" />
+        <skos:member rdf:resource="https://standards.brookeslab.org/cce/draft#CCE_007" />
         <skos:member rdf:resource="https://standards.brookeslab.org/cce/draft#CCE_010" />
         <skos:member rdf:resource="https://standards.brookeslab.org/cce/draft#CCE_011" />
+        <skos:member rdf:resource="https://standards.brookeslab.org/cce/draft#CCE_012" />
+        <skos:member rdf:resource="https://standards.brookeslab.org/cce/draft#CCE_013" />
+        <skos:member rdf:resource="https://standards.brookeslab.org/cce/draft#CCE_014" />
+        <skos:member rdf:resource="https://standards.brookeslab.org/cce/draft#CCE_015" />
+        <skos:member rdf:resource="https://standards.brookeslab.org/cce/draft#CCE_016" />
         <skos:member rdf:resource="https://standards.brookeslab.org/cce/draft#CCE_017" />
+        <skos:member rdf:resource="https://standards.brookeslab.org/cce/draft#CCE_018" />
+        <skos:member rdf:resource="https://standards.brookeslab.org/cce/draft#CCE_019" />
+        <skos:member rdf:resource="https://standards.brookeslab.org/cce/draft#CCE_020" />
     </rdf:Description>
 
     <rdf:Description rdf:about="https://standards.brookeslab.org/cce/draft#purpose">
@@ -44,6 +53,7 @@
         <skos:member rdf:resource="https://standards.brookeslab.org/cce/draft#CCE_004" />
         <skos:member rdf:resource="https://standards.brookeslab.org/cce/draft#CCE_006" />
         <skos:member rdf:resource="https://standards.brookeslab.org/cce/draft#CCE_008" />
+        <skos:member rdf:resource="https://standards.brookeslab.org/cce/draft#CCE_009" />
     </rdf:Description>
 
     <rdf:Description rdf:about="https://standards.brookeslab.org/cce/draft#CCE_001">
