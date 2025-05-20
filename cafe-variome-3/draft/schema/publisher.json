@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/BrookesLab/standards/main/cafe-variome-3/draft/schema/publisher.json",
+  "type": "object",
+  "title": "Publisher Schema",
+  "description": "A schema for a publisher object, capturing the publisher of a resource.",
+  "properties": {
+    "publisherType": {
+      "$ref": "https://raw.githubusercontent.com/BrookesLab/standards/main/cafe-variome-3/draft/schema/publisher-type.json"
+    },
+    "name": {
+      "type": "string"
+    },
+    "contactEmail": {
+      "type": "string",
+      "format": "email"
+    },
+    "contactName": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "location": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "publisherType",
+    "name",
+    "contactEmail"
+  ]
+}
