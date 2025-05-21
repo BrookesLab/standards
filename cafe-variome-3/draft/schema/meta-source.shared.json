@@ -7,26 +7,35 @@
   "properties": {
     "sourceId": {
       "type": "string",
+      "description": "A unique identifier for the source.",
       "format": "uuid"
     },
     "sourceName": {
-      "type": "string"
+      "type": "string",
+      "description": "The human-readable name of the source."
+    },
+    "sourceType": {
+      "$ref": "https://raw.githubusercontent.com/BrookesLab/standards/main/cafe-variome-3/draft/schema/meta-source-type.json",
+      "default": "custom"
     },
     "publisher": {
       "$ref": "https://raw.githubusercontent.com/BrookesLab/standards/main/cafe-variome-3/draft/schema/publisher.json"
     },
     "resourceUrls": {
       "type": "array",
+      "description": "The URLs pointing to the resource details, such as website, download link, documentation, etc.",
       "items": {
         "type": "string",
         "format": "uri"
       }
     },
     "description": {
-      "type": "string"
+      "type": "string",
+      "description": "The description of the metadata entry, providing details about the resource."
     },
     "themes": {
       "type": "array",
+      "description": "The themes or schemas associated with the resource.",
       "items": {
         "type": "string",
         "format": "uri"
@@ -34,6 +43,7 @@
     },
     "releaseLicense": {
       "type": "string",
+      "description": "The license under which the resource is released. Pointing to a license file or page.",
       "format": "uri"
     },
     "language": {
@@ -41,13 +51,16 @@
     },
     "customFields": {
       "type": "object",
+      "description": "An Attribute-Value map for custom fields, used to capture additional metadata.",
       "additionalProperties": {
         "oneOf": [
           {
-            "type": "string"
+            "type": "string",
+            "description": "A string value. e.g. sampleCollectedTime=2023-10-01T12:00:00Z"
           },
           {
             "type": "array",
+            "description": "An array of strings. e.g. centersVisited=[\"Center1\", \"Center2\"]",
             "items": {
               "type": "string"
             }
@@ -57,12 +70,42 @@
     }
   },
   "required": [
-    "sourceId",
     "sourceName",
+    "sourceType",
     "publisher",
-    "description",
-    "releaseLicense",
-    "language",
-    "connectionId"
+    "resourceUrls"
+  ],
+  "additionalProperties": false,
+  "examples": [
+    {
+      "sourceId": "5b8d1f5b-44bf-45b7-9b99-f71e14220e0e",
+      "sourceName": "Mock Metadata Entry",
+      "sourceType": "custom",
+      "publisher": {
+        "publisherType": "organization",
+        "name": "Brookes Lab",
+        "contactEmail": "brookeslab@leicester.ac.uk",
+        "contactName": "Mr. John Doe",
+        "url": "https://le.ac.uk/health-data-research",
+        "location": "Leicester, UK"
+      },
+      "resourceUrls": [
+        "https://example.com/resource1",
+        "https://example.com/resource2"
+      ],
+      "description": "This is a mock metadata entry for demonstration purposes.",
+      "themes": [
+        "https://raw.githubusercontent.com/BrookesLab/standards/main/cafe-variome-3/draft/schema/meta-source.shared.json"
+      ],
+      "releaseLicense": "https://opensource.org/license/mit",
+      "language": "en",
+      "customFields": {
+        "sampleCollectedTime": "2023-10-01T12:00:00Z",
+        "centersVisited": [
+          "Center1",
+          "Center2"
+        ]
+      }
+    }
   ]
 }

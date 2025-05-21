@@ -30,5 +30,16 @@
     "publisherType",
     "name",
     "contactEmail"
+  ],
+  "additionalProperties": false,
+  "examples": [
+    {
+      "publisherType": "organization",
+      "name": "Brookes Lab",
+      "contactEmail": "brookeslab@leicester.ac.uk",
+      "contactName": "Mr. John Doe",
+      "url": "https://le.ac.uk/health-data-research",
+      "location": "Leicester, UK"
+    }
   ]
 }
