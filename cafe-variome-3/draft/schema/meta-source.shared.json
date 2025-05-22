@@ -75,7 +75,6 @@
     "publisher",
     "resourceUrls"
   ],
-  "additionalProperties": false,
   "examples": [
     {
       "sourceId": "5b8d1f5b-44bf-45b7-9b99-f71e14220e0e",

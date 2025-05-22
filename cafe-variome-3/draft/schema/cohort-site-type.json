@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/BrookesLab/standards/main/cafe-variome-3/draft/schema/cohort-site-type.json",
+  "title": "Cohort Site Type",
+  "description": "A schema for the type of cohort, regarding the site of the research.",
+  "type": "string",
+  "enum": [
+    "singleSite",
+    "multiSite",
+    "multiCountry"
+  ]
+}

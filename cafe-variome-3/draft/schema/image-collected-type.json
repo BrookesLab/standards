@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/BrookesLab/standards/main/cafe-variome-3/draft/schema/image-collected-type.json",
+  "title": "Image Collected Type",
+  "description": "The image types being collected in a resource.",
+  "type": "string",
+  "enum": [
+    "mri",
+    "petAmyloid",
+    "petTau",
+    "spect",
+    "ocular"
+  ]
+}

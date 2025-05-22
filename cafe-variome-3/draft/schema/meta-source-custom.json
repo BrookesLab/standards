@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/BrookesLab/standards/main/cafe-variome-3/draft/schema/meta-source-custom.json",
+  "type": "object",
+  "title": "Custom Meta Source",
+  "description": "A custom type metadata entry, which cannot be classified into other supported types of metadata.",
+  "allOf": [
+    {
+      "$ref": "https://raw.githubusercontent.com/BrookesLab/standards/main/cafe-variome-3/draft/schema/meta-source.shared.json"
+    }
+  ],
+  "unevaluatedProperties": false
+}

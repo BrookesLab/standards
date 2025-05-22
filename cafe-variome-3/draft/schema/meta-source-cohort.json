@@ -1,0 +1,109 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/BrookesLab/standards/main/cafe-variome-3/draft/schema/meta-source-cohort.json",
+  "type": "object",
+  "title": "Cohort Meta Source",
+  "description": "The cohort model used by the European Platform for Neurodegenerative Disease to register their collaborative cohorts.",
+  "allOf": [
+    {
+      "$ref": "https://raw.githubusercontent.com/BrookesLab/standards/main/cafe-variome-3/draft/schema/meta-source.shared.json"
+    }
+  ],
+  "properties": {
+    "cohortDetails": {
+      "type": "object",
+      "description": "The details that describes the cohort itself",
+      "properties": {
+        "siteType": {
+          "$ref": "https://raw.githubusercontent.com/BrookesLab/standards/main/cafe-variome-3/draft/schema/cohort-site-type.json"
+        },
+        "countries": {
+          "type": "array",
+          "description": "The countries where the cohort research was conducted",
+          "items": {
+            "$ref": "https://raw.githubusercontent.com/BrookesLab/standards/main/cafe-variome-3/draft/schema/country-code.json"
+          }
+        },
+        "yearStart": {
+          "type": "integer",
+          "description": "The year the cohort research started"
+        },
+        "centerName": {
+          "type": "string",
+          "description": "The name of the center that conducted the research"
+        },
+        "ongoing": {
+          "type": "boolean",
+          "description": "Whether the cohort research is still ongoing"
+        }
+      },
+      "required": [
+        "siteType",
+        "countries",
+        "yearStart"
+      ],
+      "additionalProperties": false
+    },
+    "cohortCollectedTypes": {
+      "type": "object",
+      "description": "The data types collected during the cohort research",
+      "properties": {
+        "participants": {
+          "type": "object",
+          "description": "The participants (subjects) information in the cohort",
+          "properties": {
+            "diseases": {
+              "type": "array",
+              "description": "The disorders this cohort is researching and collecting data on",
+              "items": {
+                "$ref": "https://raw.githubusercontent.com/BrookesLab/standards/main/cafe-variome-3/draft/schema/disorder-collected-type.json"
+              }
+            },
+            "numberOfSubjects": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "The number of subjects in the cohort"
+            }
+          },
+          "required": [
+            "diseases",
+            "numberOfSubjects"
+          ]
+        },
+        "bioSamples": {
+          "type": "array",
+          "description": "The biosamples collected from the participants",
+          "items": {
+            "$ref": "https://raw.githubusercontent.com/BrookesLab/standards/main/cafe-variome-3/draft/schema/bio-sample-collected-type.json"
+          }
+        },
+        "images": {
+          "type": "array",
+          "items": {
+            "$ref": "https://raw.githubusercontent.com/BrookesLab/standards/main/cafe-variome-3/draft/schema/image-collected-type.json"
+          }
+        },
+        "cognitiveData": {
+          "type": "array",
+          "items": {
+            "$ref": "https://raw.githubusercontent.com/BrookesLab/standards/main/cafe-variome-3/draft/schema/cognitive-data-collected-type.json"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "datasetIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "description": "The dataset IDs that are associated with the cohort",
+        "format": "uuid"
+      }
+    }
+  },
+  "required": [
+    "sourceType",
+    "cohortDetails"
+  ],
+  "unevaluatedProperties": false
+}

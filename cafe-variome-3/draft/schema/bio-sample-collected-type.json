@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/BrookesLab/standards/main/cafe-variome-3/draft/schema/bio-sample-collected-type.json",
+  "title": "Bio Sample Collected Type",
+  "description": "The bio sample types being collected in a resource.",
+  "type": "string",
+  "enum": [
+    "csf",
+    "serum",
+    "plasma",
+    "dna",
+    "saliva",
+    "urine",
+    "stool"
+  ]
+}
