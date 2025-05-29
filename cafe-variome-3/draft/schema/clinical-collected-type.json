@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/BrookesLab/standards/main/cafe-variome-3/draft/schema/clinical-collected-type.json",
+  "title": "Clinical Data Collected Type",
+  "description": "The clinical data types being collected in a resource.",
+  "type": "string",
+  "enum": [
+    "comorbidities",
+    "medicationUse",
+    "familyHistory",
+    "ageOfSymptomOnset",
+    "clinicalDiagnosis",
+    "exposure",
+    "lifeStyleInfo",
+    "vitalSigns"
+  ]
+}

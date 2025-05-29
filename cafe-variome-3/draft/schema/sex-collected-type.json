@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/BrookesLab/standards/main/cafe-variome-3/draft/schema/sex-collected-type.json",
+  "title": "Sex Collected Type",
+  "description": "The birth sex types being collected in a resource.",
+  "type": "string",
+  "enum": [
+    "male",
+    "female",
+    "other",
+    "unknown"
+  ]
+}

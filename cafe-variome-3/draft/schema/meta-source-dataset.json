@@ -1,0 +1,141 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/BrookesLab/standards/main/cafe-variome-3/draft/schema/meta-source-dataset.json",
+  "type": "object",
+  "title": "Dataset Meta Source",
+  "description": "Metadata model for representing a dataset, which is an atomic collection of data, and can be requested, authorised and managed as a whole.",
+  "allOf": [
+    {
+      "$ref": "https://raw.githubusercontent.com/BrookesLab/standards/main/cafe-variome-3/draft/schema/meta-source-custom.json"
+    }
+  ],
+  "properties": {
+    "datasetVersions": {
+      "type": "array",
+      "description": "The versions of the dataset. Each version is a snapshot of the dataset, represented in full (not incremental changes).",
+      "items": {
+        "type": "object",
+        "properties": {
+          "datasetDetails": {
+            "type": "object",
+            "description": "The details that describes this dataset version itself",
+            "properties": {
+              "versionId": {
+                "type": "string",
+                "description": "A unique ID of this dataset version",
+                "format": "uuid"
+              },
+              "versionName": {
+                "type": "string",
+                "description": "The name of this dataset version, preferably a semantic version number"
+              },
+              "keywords": {
+                "type": "array",
+                "description": "Keywords that describe the dataset",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "publishedDate": {
+                "type": "string",
+                "description": "The date this dataset version was published",
+                "format": "date"
+              },
+              "updateDate": {
+                "type": "string",
+                "description": "The date this dataset version was last updated",
+                "format": "date"
+              },
+              "connectionId": {
+                "type": "string",
+                "description": "The ID of a data source stored in **THIS** Cafe Variome instance. This allowing connecting a record level source to a metadata entry",
+                "format": "uuid"
+              }
+            }
+          },
+          "datasetContent": {
+            "type": "object",
+            "description": "The content (data gathered and stored) of this dataset version",
+            "properties": {
+              "numberOfSubjects": {
+                "type": "integer",
+                "minimum": 0,
+                "description": "The number of subjects in the dataset"
+              },
+              "minAge": {
+                "type": "integer",
+                "minimum": 0,
+                "description": "The minimum age of the subjects in the dataset"
+              },
+              "maxAge": {
+                "type": "integer",
+                "minimum": 0,
+                "description": "The maximum age of the subjects in the dataset"
+              },
+              "countries": {
+                "type": "array",
+                "description": "The countries where the subjects in the dataset are collected from",
+                "items": {
+                  "$ref": "https://raw.githubusercontent.com/BrookesLab/standards/main/cafe-variome-3/draft/schema/country-code.json"
+                }
+              },
+              "diseases": {
+                "type": "array",
+                "description": "The diseases and disorders that the subjects in the dataset are being studied for",
+                "items": {
+                  "$ref": "https://raw.githubusercontent.com/BrookesLab/standards/main/cafe-variome-3/draft/schema/disorder-collected-type.json"
+                }
+              },
+              "sex": {
+                "type": "array",
+                "description": "The birth sex of the subjects in the dataset",
+                "items": {
+                  "$ref": "https://raw.githubusercontent.com/BrookesLab/standards/main/cafe-variome-3/draft/schema/sex-collected-type.json"
+                }
+              },
+              "clinical": {
+                "type": "array",
+                "description": "The clinical data collected in the dataset",
+                "items": {
+                  "$ref": "https://raw.githubusercontent.com/BrookesLab/standards/main/cafe-variome-3/draft/schema/clinical-collected-type.json"
+                }
+              },
+              "markers": {
+                "type": "array",
+                "description": "The markers collected in the dataset",
+                "items": {
+                  "$ref": "https://raw.githubusercontent.com/BrookesLab/standards/main/cafe-variome-3/draft/schema/marker-collected-type.json"
+                }
+              },
+              "images": {
+                "type": "array",
+                "description": "The imaging data collected in the dataset",
+                "items": {
+                  "$ref": "https://raw.githubusercontent.com/BrookesLab/standards/main/cafe-variome-3/draft/schema/image-collected-type.json"
+                }
+              },
+              "electrophysiology": {
+                "type": "array",
+                "description": "The electrophysiology data collected in the dataset",
+                "items": {
+                  "$ref": "https://raw.githubusercontent.com/BrookesLab/standards/main/cafe-variome-3/draft/schema/electrophysiology-collected-type.json"
+                }
+              },
+              "dataTypes": {
+                "type": "array",
+                "description": "The generic types of data collected in the dataset",
+                "items": {
+                  "$ref": "https://raw.githubusercontent.com/BrookesLab/standards/main/cafe-variome-3/draft/schema/data-collected-type.json"
+                }
+              }
+            }
+          }
+        },
+        "required": [
+          "datasetDetails"
+        ]
+      }
+    }
+  },
+  "unevaluatedProperties": false
+}
