@@ -63,6 +63,11 @@
               "type": "integer",
               "minimum": 0,
               "description": "The number of subjects in the cohort"
+            },
+            "numberOfControlGroup": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "The number of subjects in the control group in the cohort"
             }
           },
           "required": [

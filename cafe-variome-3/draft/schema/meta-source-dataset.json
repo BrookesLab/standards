@@ -6,7 +6,7 @@
   "description": "Metadata model for representing a dataset, which is an atomic collection of data, and can be requested, authorised and managed as a whole.",
   "allOf": [
     {
-      "$ref": "https://raw.githubusercontent.com/BrookesLab/standards/main/cafe-variome-3/draft/schema/meta-source-custom.json"
+      "$ref": "https://raw.githubusercontent.com/BrookesLab/standards/main/cafe-variome-3/draft/schema/meta-source.shared.json"
     }
   ],
   "properties": {
@@ -36,6 +36,16 @@
                   "type": "string"
                 }
               },
+              "startDate": {
+                "type": "string",
+                "description": "The date this dataset version started being collected",
+                "format": "date"
+              },
+              "endDate": {
+                "type": "string",
+                "description": "The date this dataset version stopped being collected",
+                "format": "date"
+              },
               "publishedDate": {
                 "type": "string",
                 "description": "The date this dataset version was published",
@@ -62,6 +72,19 @@
                 "minimum": 0,
                 "description": "The number of subjects in the dataset"
               },
+              "numberOfControlGroup": {
+                "type": "integer",
+                "minimum": 0,
+                "description": "The number of subjects in the control group of the dataset"
+              },
+              "averageFollowUpDuration": {
+                "type": "integer",
+                "description": "Average subject follow-up duration, in months (if longitudinal study)"
+              },
+              "maxFollowUpDuration": {
+                "type": "integer",
+                "description": "Maximum allowed follow-up duration, in months (if longitudinal study)"
+              },
               "minAge": {
                 "type": "integer",
                 "minimum": 0,
@@ -87,10 +110,33 @@
                 }
               },
               "sex": {
-                "type": "array",
-                "description": "The birth sex of the subjects in the dataset",
-                "items": {
-                  "$ref": "https://raw.githubusercontent.com/BrookesLab/standards/main/cafe-variome-3/draft/schema/sex-collected-type.json"
+                "type": "object",
+                "description": "The birth sex and distribution of the subjects in the dataset",
+                "properties": {
+                  "male": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1,
+                    "description": "The proportion of male subjects in the dataset"
+                  },
+                  "female": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1,
+                    "description": "The proportion of female subjects in the dataset"
+                  },
+                  "other": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1,
+                    "description": "The proportion of subjects in the dataset that are not biologically male nor female"
+                  },
+                  "unknown": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1,
+                    "description": "The proportion of subjects in the dataset with birth sex not known or recorded"
+                  }
                 }
               },
               "clinical": {
